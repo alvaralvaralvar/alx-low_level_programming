@@ -1,17 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints all possible different combinations of two digits in C.
- * Numbers must be separated by a comma followed by a space. The two digits must
- * be different. 01 and 10 are considered the same combination of the two digits
- * 0 and 1. Print only the smallest combination of two digits. Numbers should be
- * printed in ascending order, with two digits. Uses the putchar function and
- * does not use variables of type char.
- *
- * Return: Always 0 (Success)
+ * main - prints all possible different combinations of two digits
+ * Return: 0 (success)
  */
+
 int main(void)
 {
     int i, j;
@@ -29,7 +22,6 @@ int main(void)
             }
         }
     }
-
+    putchar('\n');
     return (0);
 }
-
