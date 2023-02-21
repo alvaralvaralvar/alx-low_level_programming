@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
-  * main - Entry Point
-  *
-  * A program that prints _putchar
-  *
-  * return: Always 0 (Success)
-  *
-  * Author: Alvar Wakiagi
-  *
-  */
+ * main - Entry point
+ *
+ * Description: a program that prints _putchar followed by a new line
+ *
+ * Return: Always 0 (success)
+ *
+ * Author: Alvar Wakiagi
+ *
+ */
 
 int main(void)
 {
@@ -22,6 +22,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
