@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-  *main - Entry Point
+  * main - Entry Point
   *
-  *A program that prints _putchar
+  * A program that prints _putchar
   *
-  *return: Always 0 (Success)
+  * return: Always 0 (Success)
   *
-  *Author: Alvar Wakiagi
+  * Author: Alvar Wakiagi
   *
   */
 
