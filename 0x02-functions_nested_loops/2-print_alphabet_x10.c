@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * void print_alphabet_x10 - prints the alphabet in lowercase ten times
+  * print_alphabet_x10 - prints the alphabet in lowercase ten times
   *
   * Author: Alvar Wakiagi
   *
