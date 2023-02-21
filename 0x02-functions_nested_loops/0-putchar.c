@@ -5,14 +5,13 @@
   *
   *A program that prints _putchar
   *
-  *Author: Alvar Wakiagi
+  *return: Always 0 (Success)
   *
-  *return: Always 0
+  *Author: Alvar Wakiagi
   *
   */
 
 int main(void)
-
 {
 	_putchar('_');
 	_putchar('p');
