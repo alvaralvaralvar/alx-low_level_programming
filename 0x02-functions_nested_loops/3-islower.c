@@ -3,7 +3,7 @@
 /**
   * _islower - checks for lowercase characters
   *
-  *Author: Alvar Wakiagi
+  * Author: Alvar Wakiagi
   *
   */
 
