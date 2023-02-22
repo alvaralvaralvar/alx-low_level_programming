@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, count;
+	int count;
 	unsigned int prev = 1, curr = 2, next;
 
 	printf("%u, %u", prev, curr);
