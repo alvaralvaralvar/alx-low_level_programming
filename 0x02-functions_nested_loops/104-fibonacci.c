@@ -7,20 +7,21 @@
  */
 int main(void)
 {
-    int i, count;
-    unsigned int prev = 1, curr = 2, next;
+	int i, count;
+	unsigned int prev = 1, curr = 2, next;
 
-    printf("%u, %u", prev, curr);
+	printf("%u, %u", prev, curr);
 
-    for (count = 2; count < 98; count++)
-    {
-        next = prev + curr;
-        printf(", %u", next);
-        prev = curr;
-        curr = next;
-    }
+	for (count = 2; count < 98; count++)
 
-    printf("\n");
+	{
+		next = prev + curr;
+		printf(", %u", next);
+		prev = curr;
+		curr = next;
+	}
 
-    return (0);
+	printf("\n");
+
+	return (0);
 }
