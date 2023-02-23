@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if c is a digit
- * @c - the character to be checked
- * return: 1 if c is a digit, otherwise 0
+ * _isdigit - Prints the digit
+ * @c: character to be checked
+ * Return: last digit
  */
 
 int _isdigit(int c)
@@ -11,7 +11,8 @@ int _isdigit(int c)
 	if (c >= '0' && c <= '9')
 	{
 		return (1);
-	} else
+	}
+	else
 	{
 		return (0);
 	}
