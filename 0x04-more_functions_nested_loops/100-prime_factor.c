@@ -1,28 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_diagonal - draws a diagonal line
- * @n: takes in an integer
+ * main - entry block
+ * @void; no argument
+ * Return: 0
  */
 
-void print_diagonal(int n)
+int main(void)
 {
-	int i, j;
+	long i, number = 612852475143;
 
-	if (n <= 0)
-		_putchar('\n');
-
-	for (i = 0; i < n; i++)
+	for (i = 2; i <= number; i++)
 	{
-		for (j = 0; j <= i; j++)
+		if (number % i == 0)
 		{
-			if (i == j)
-			{
-				_putchar('\\');
-				_putchar('\n');
-			}
-			else
-				_putchar(' ');
+			number = number / i;
+			i--;
 		}
 	}
+	printf("%lu\n", i);
+
+	return (0);
 }
