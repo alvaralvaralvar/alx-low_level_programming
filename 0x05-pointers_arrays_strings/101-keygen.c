@@ -3,21 +3,24 @@
 #include <time.h>
 
 #define PASSWORD_LENGTH 10
-#define CHARACTERS "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+={}[]\\|;:'\",.<>/?`~"
 
 int main(void)
 {
-    srand(time(NULL)); // Seed the random number generator with the current time
+    // Define an array of characters that can appear in the password
+    char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=";
 
-    char password[PASSWORD_LENGTH + 1]; // +1 for the null terminator
-    int i;
+    // Seed the random number generator with the current time
+    srand(time(NULL));
 
-    for (i = 0; i < PASSWORD_LENGTH; i++)
+    // Generate a random password
+    char password[PASSWORD_LENGTH + 1]; // Add one for the null terminator
+    for (int i = 0; i < PASSWORD_LENGTH; i++)
     {
-        password[i] = CHARACTERS[rand() % (sizeof(CHARACTERS) - 1)];
+        password[i] = charset[rand() % (sizeof(charset) - 1)];
     }
-    password[PASSWORD_LENGTH] = '\0'; // Add the null terminator to the end of the string
+    password[PASSWORD_LENGTH] = '\0'; // Add the null terminator at the end
 
+    // Print the password
     printf("%s\n", password);
 
     return 0;
